@@ -3,7 +3,7 @@
 Le repository di git sono le cartelle contenenti i file .git. 
 <br> <br>
 
-Di seguito i comandi essenziali:
+### Comandi essenziali
 ```bash
 git init
 ```
@@ -46,6 +46,8 @@ git log
 Storico dei commit
 <br><br>
 
+### Cambiare branch
+
 ```bash
 git checkout #nome del branch/nome della commit a cui si vuole navigare
 ```
@@ -75,4 +77,4 @@ Si crea un branch detatched.
 ```bash
 git merge + #nome del branch da aggiungere al branch in cui ci troviamo
 ```
-Comando per fare il merge del branch al branch su cui si è attualmente. Per muoversi da un branch all’altro ricordiamo che si usa il comando
+Comando per fare il merge del branch al branch su cui si è attualmente.
