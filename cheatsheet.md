@@ -23,7 +23,7 @@ git add .
 ```bash
 git commit
 ```
-Salva su cloud le modifiche ai file o alle cartelle. Apre un editor che fa aggiungere un commento alla commit. 
+Salva su cloud le modifiche ai file o alle cartelle. Apre un editor che fa aggiungere un commento alla commit. Il commit va sul branch corrente. Se si vuole fare un commit su un altro branch, spostarsi sul branch desiderato.
 ```bash
 git commit -m 'commento'
 ```
