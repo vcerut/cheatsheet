@@ -19,4 +19,8 @@ Realmente, è un file all'interno della cartella .git che contiene uno storico d
 ```bash
 git commit
 ```
-Salva su cloud le modifiche ai file o alle cartelle.
+Salva su cloud le modifiche ai file o alle cartelle. Apre un editor che fa aggiungere un commento alla commit. 
+```bash
+git commit -m 'commento'
+```
+Comando per la commit, ma aggiunge direttamente dalla shell il commento della commit, senza passare dall'editor di testo.
