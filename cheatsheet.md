@@ -13,7 +13,7 @@ git status
 ```
 Dice lo status delle commit all'interno delle repository. Praticamente ci fa vedere il punto a cui noi siamo con le modifiche ai file.
 ```bash
-git add #[nome dei file/cartelle modificati]
+git add #nome dei file/cartelle modificati
 ```
 Realmente, è un file all'interno della cartella .git che contiene uno storico dei file modificati. "Salva" le modifiche apportate ai file, ma non è una commit.
 ```bash
@@ -33,10 +33,28 @@ git log
 ```
 Storico dei commit
 ```bash
-git checkout #[nome del branch/nome della commit a cui si vuole navigare]
+git checkout #nome del branch/nome della commit a cui si vuole navigare
 ```
 Comando che permette di navigare i branch e di crearne di nuovi. Per navigare a un log precedente rispetto a quello in cui siamo, si può copiare da git log i primi caratteri della commit. 
 ```bash
-git checkout -b #[nome del nuovo branch che si vuole creare]
+git checkout -b #nome del nuovo branch che si vuole creare
 ```
-Con -b si va a aggiungere un nuovo branch a quello in cui ci si trova.
+Con -b si va a aggiungere un nuovo branch a quello in cui ci si trova. <br>
+Ogni tanto git potrebbe perdere le modifiche fatte su un branch. Questo potrebbe succedere perchè potremmo non aver dato un’”etichetta” a un nostro checkout, perchè al posto di usare il comando
+```bash
+git checkout -b + #nomebranch
+```
+abbiamo usato
+```bash
+git checkout + #nomebranch
+```
+ Stiamo infatti creando un branch separato dal branch main. Quando succede una cosa simile, viene sullo schermo una notifica che dice che siamo in “detatched mode”. A schermo ci viene anche dato il suggerimento per creare un nuovo branch mantenendo le modifiche fatte.
+ Suggerisce di dare il comando 
+```bash
+git switch
+```
+Che significa spostarsi da un branch all’altro. Combinando switch e checkout si può andare a un commit molto precedente rispetto a dove siamo ora e creare un branch a partire da allora.
+```bash
+git switch -c
+```
+Si crea un branch detatched.
