@@ -1,4 +1,6 @@
 ## Cheatsheet Version Control
+1. [Comandi Essenziali](#comandi-essenziali)
+2. [Cambiare Branch](#cambiare-branch)
 ***
 Le repository di git sono le cartelle contenenti i file .git. 
 <br> <br>
