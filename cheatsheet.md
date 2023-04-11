@@ -13,9 +13,13 @@ git status
 ```
 Dice lo status delle commit all'interno delle repository. Praticamente ci fa vedere il punto a cui noi siamo con le modifiche ai file.
 ```bash
-git add
+git add #[nome dei file/cartelle modificati]
 ```
 Realmente, è un file all'interno della cartella .git che contiene uno storico dei file modificati. "Salva" le modifiche apportate ai file, ma non è una commit.
+```bash
+git add .
+```
+"Salva" tutte le modifiche.
 ```bash
 git commit
 ```
@@ -35,4 +39,4 @@ Comando che permette di navigare i branch e di crearne di nuovi. Per navigare a 
 ```bash
 git checkout -b #[nome del nuovo branch che si vuole creare]
 ```
-Con -b si va a creare un nuovo branch a quello in cui ci si trova.
+Con -b si va a aggiungere un nuovo branch a quello in cui ci si trova.
