@@ -57,13 +57,8 @@ git checkout -b + #nome del nuovo branch che si vuole creare
 ```
 Con -b si va a aggiungere un nuovo branch a quello in cui ci si trova. <br>
 Ogni tanto git potrebbe perdere le modifiche fatte su un branch. Questo potrebbe succedere perchè potremmo non aver dato un’”etichetta” a un nostro checkout, perchè al posto di usare il comando
-```bash
-git checkout -b + #nomebranch
-```
-abbiamo usato
-```bash
-git checkout + #nomebranch
-```
+`git checkout -b + #nomebranch` abbiamo usato
+`git checkout + #nomebranch`.
  Stiamo infatti creando un branch separato dal branch main. Quando succede una cosa simile, viene sullo schermo una notifica che dice che siamo in “detatched mode”. A schermo ci viene anche dato il suggerimento per creare un nuovo branch mantenendo le modifiche fatte.
  Suggerisce di dare il comando 
 ```bash
