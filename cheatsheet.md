@@ -24,3 +24,15 @@ Salva su cloud le modifiche ai file o alle cartelle. Apre un editor che fa aggiu
 git commit -m 'commento'
 ```
 Comando per la commit, ma aggiunge direttamente dalla shell il commento della commit, senza passare dall'editor di testo.
+```bash
+git log
+```
+Storico dei commit
+```bash
+git checkout #[nome del branch/nome della commit a cui si vuole navigare]
+```
+Comando che permette di navigare i branch e di crearne di nuovi. Per navigare a un log precedente rispetto a quello in cui siamo, si può copiare da git log i primi caratteri della commit. 
+```bash
+git checkout -b #[nome del nuovo branch che si vuole creare]
+```
+Con -b si va a creare un nuovo branch a quello in cui ci si trova.
