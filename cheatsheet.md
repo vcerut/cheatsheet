@@ -80,11 +80,17 @@ git log --all --decorate --oneline --graph
 Comando per vedere in modo grafico le modifiche e i vari branch creati
 
 ### Repository remote
+La cosa più importante per quando si sincronizzano i cambiamenti su una repository remota, nel nostro caso GitLab, è avere l'account collegato al nostro git personale tramite una chiave SSH.
+Una volta che si ha un account collegato, seguire questo procedimento:
+1. Creare un gruppo
+2. Creare un progetto (nel nostro caso, partendo da un "blank project")
+3. GitLab suggerirà tre metodologie per inizializzare un progetto; nel nostro caso, si deve seguire la teza metodologia, in quanto si va a collegare il progetto con un progetto già esistente sul nostro pc. Usare quindi questi comandi:
 ```bash
-git remote add origin git@gitlab.com + #nomeutente/nomegruppo.git
+git remote add origin git@gitlab.com: #nomeutente/nomegruppo.git
 ```
 Si dà l'indirizzo su dove si condividono le cose.
 ```bash
 git push -u origin --all
 ```
+Comando da inserire dopo aver confermato i commit dal nostro Git personale.
 Si sincronizzano i cambiamenti del file di origine alla repository remota. Se dovesse dare errore potrebbe essere perchè non si ha ancora una chiave SSH collegata al profilo.
