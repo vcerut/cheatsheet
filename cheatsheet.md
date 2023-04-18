@@ -1,6 +1,7 @@
 ## Cheatsheet Version Control
 1. [Comandi Essenziali](#comandi-essenziali)
 2. [Cambiare Branch](#cambiare-branch)
+3. [Repository Remote](#repository-remote)
 ***
 Le repository di git sono le cartelle contenenti i file .git. 
 <br> <br>
@@ -49,7 +50,6 @@ Storico dei commit
 <br><br>
 
 ### Cambiare branch
-
 ```bash
 git checkout #nome del branch/nome della commit a cui si vuole navigare
 ```
@@ -59,8 +59,7 @@ git checkout -b + #nome del nuovo branch che si vuole creare
 ```
 Con -b si va a aggiungere un nuovo branch a quello in cui ci si trova. <br>
 Ogni tanto git potrebbe perdere le modifiche fatte su un branch. Questo potrebbe succedere perchè potremmo non aver dato un’”etichetta” a un nostro checkout, perchè al posto di usare il comando
-`git checkout -b + #nomebranch` abbiamo usato
-`git checkout + #nomebranch`.
+`git checkout -b + #nomebranch` abbiamo usato `git checkout + #nomebranch`.
  Stiamo infatti creando un branch separato dal branch main. Quando succede una cosa simile, viene sullo schermo una notifica che dice che siamo in “detatched mode”. A schermo ci viene anche dato il suggerimento per creare un nuovo branch mantenendo le modifiche fatte.
  Suggerisce di dare il comando 
 ```bash
@@ -75,3 +74,17 @@ Si crea un branch detatched.
 git merge + #nome del branch da aggiungere al branch in cui ci troviamo
 ```
 Comando per fare il merge del branch al branch su cui si è attualmente.
+```bash
+git log --all --decorate --oneline --graph
+```
+Comando per vedere in modo grafico le modifiche e i vari branch creati
+
+### Repository remote
+```bash
+git remote add origin git@gitlab.com + #nomeutente/nomegruppo.git
+```
+Si dà l'indirizzo su dove si condividono le cose.
+```bash
+git push -u origin --all
+```
+Si sincronizzano i cambiamenti del file di origine alla repository remota. Se dovesse dare errore potrebbe essere perchè non si ha ancora una chiave SSH collegata al profilo.
