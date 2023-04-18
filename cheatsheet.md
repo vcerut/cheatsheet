@@ -94,3 +94,12 @@ git push -u origin --all
 ```
 Comando da inserire dopo aver confermato i commit dal nostro Git personale.
 Si sincronizzano i cambiamenti del file di origine alla repository remota. Se dovesse dare errore potrebbe essere perchè non si ha ancora una chiave SSH collegata al profilo.
+```bash
+git push #nome origine #nome nuovo branch
+```
+Comando che serve per fare il push sulla repository remota solo di un branch.
+Quando si lavora in gruppo solitamente prima di fare il merge bisogna fare una richiesta. La richiesta di merge su fa sempre solo dal sito GitLab/GitHub.
+```bash
+git pull origin main
+```
+Comando che serve per scaricare sul nostro git e sul nostro pc i cambiamenti fatti da altri su altri branch.
