@@ -1,4 +1,7 @@
-## Cheatsheet Version Control
+# Cheatsheet Version Control
+
+*Cheatsheet creata da Valeria Cerutti*
+
 1. [Comandi Essenziali](#comandi-essenziali)
 2. [Cambiare Branch](#cambiare-branch)
 3. [Repository Remote](#repository-remote)
@@ -70,6 +73,9 @@ Che significa spostarsi da un branch all’altro. Combinando switch e checkout s
 git switch -c
 ```
 Si crea un branch detatched.
+
+*La differenza tra `switch` e `checkout` è che switch opera solo sui branch, mentre checkout è un comando un po' più universale.*
+
 ```bash
 git merge + #nome del branch da aggiungere al branch in cui ci troviamo
 ```
