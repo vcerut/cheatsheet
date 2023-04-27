@@ -105,3 +105,7 @@ git push #nome origine #nome branch che si vuole pushare
 ```
 Comando che serve per fare il push sulla repository remota solo di un branch.
 Quando si lavora in gruppo solitamente prima di fare il merge bisogna fare una richiesta. La richiesta di merge su fa sempre solo dal sito GitLab/GitHub.
+```bash
+git pull
+```
+Aggiorna la repository locale alla versione remota più recente.
